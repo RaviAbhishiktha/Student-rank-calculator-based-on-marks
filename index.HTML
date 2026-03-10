@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Rank Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="header-container">
+<h1>🎓 Student Rank Calculator</h1>
+<a href="#course">Documentation</a>
+</div>
+</header>
+
+<!-- Welcome Section -->
+
+<section class="card">
+<h2>Welcome to Student Rank Calculator</h2>
+
+<p>
+Enter student marks across five subjects to automatically calculate
+totals, percentages, grades and class rankings.
+</p>
+
+<button id="sampleBtn">Load Sample Data</button>
+</section>
+
+
+<!-- Add Student -->
+
+<section class="card">
+
+<h2>Add Student</h2>
+
+<form id="studentForm">
+
+<div class="grid">
+
+<input type="text" id="name" placeholder="Student Name" required>
+
+<input type="text" id="roll" placeholder="Roll Number" required>
+
+<input type="number" id="math" placeholder="Mathematics" min="0" max="100" required>
+
+<input type="number" id="physics" placeholder="Physics" min="0" max="100" required>
+
+<input type="number" id="chemistry" placeholder="Chemistry" min="0" max="100" required>
+
+<input type="number" id="english" placeholder="English" min="0" max="100" required>
+
+<input type="number" id="cs" placeholder="Computer Science" min="0" max="100" required>
+
+</div>
+
+<button type="submit">Add Student</button>
+
+</form>
+
+</section>
+
+
+<!-- Statistics -->
+
+<section class="card stats">
+
+<div class="statBox">
+<h3>Total Students</h3>
+<p id="totalStudents">0</p>
+</div>
+
+<div class="statBox">
+<h3>Average</h3>
+<p id="average">0</p>
+</div>
+
+<div class="statBox">
+<h3>Highest</h3>
+<p id="highest">0</p>
+</div>
+
+<div class="statBox">
+<h3>Lowest</h3>
+<p id="lowest">0</p>
+</div>
+
+</section>
+
+
+<!-- Rankings -->
+
+<section class="card">
+
+<h2>Student Rankings</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Roll</th>
+<th>Total</th>
+<th>Percentage</th>
+<th>Grade</th>
+</tr>
+</thead>
+
+<tbody id="tableBody">
+
+<tr>
+<td colspan="6">No students added yet</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<!-- Course Outcomes -->
+
+<section id="course" class="card">
+
+<h2>Course Outcomes Demonstration</h2>
+
+<div class="co">
+
+<h3>CO1: Internet Fundamentals, HTML & CSS</h3>
+
+<ul>
+<li>HTML document structure</li>
+<li>Headings and semantic tags</li>
+<li>Typography and colors</li>
+<li>Spacing and layouts</li>
+</ul>
+
+</div>
+
+<div class="co">
+
+<h3>CO2: HTML Forms & CSS Layout</h3>
+
+<ul>
+<li>Input fields</li>
+<li>Form validation</li>
+<li>Tables</li>
+<li>Flexbox and Grid</li>
+</ul>
+
+</div>
+
+<div class="co">
+
+<h3>CO3: JavaScript Programming Essentials</h3>
+
+<ul>
+<li>Operators and conditions</li>
+<li>Loops</li>
+<li>Functions</li>
+<li>Arrays and objects</li>
+</ul>
+
+</div>
+
+<div class="co">
+
+<h3>CO4: JavaScript DOM & Async</h3>
+
+<ul>
+<li>DOM manipulation</li>
+<li>Event handling</li>
+<li>Data rendering</li>
+<li>Dynamic updates</li>
+</ul>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
